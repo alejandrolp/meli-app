@@ -19,7 +19,7 @@
 							${employee}
 						</div>
 						<div id="input-div">
-							<button id="${employee.name}" onclick="addGift(this, ${employee.id})" class="" data-modal-id="popup">Asignar regalo</button>
+							<button type="button" id="${employee.name}" onclick="addGift(this, ${employee.id})" class="" data-modal-id="popup">Asignar regalo</button>
 						</div>
 						<div class="gift-div" id="gift${employee.name}" data-gift-id="${employee.gifts.id}">
 							<g:if test="${employee.gifts != null && !employee.gifts.isEmpty()}">
