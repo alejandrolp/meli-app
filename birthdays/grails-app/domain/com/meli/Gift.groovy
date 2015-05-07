@@ -6,6 +6,7 @@ class Gift {
 	String idItem
 	String thumbnail
 	String url
+	String title
 
 	static belongsTo = [employee:Employee]
 	

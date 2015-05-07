@@ -15,6 +15,11 @@
 		<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
   		<asset:stylesheet src="application.css"/>
 		<asset:javascript src="application.js"/>
+
+		<script type="text/javascript">
+			var urlGlobal =  '${createLink(controller: 'regalos')}';
+		</script>
+
 		<g:layoutHead/>
 	</head>
 	<body>
