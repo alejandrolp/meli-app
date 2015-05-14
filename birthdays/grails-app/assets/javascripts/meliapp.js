@@ -1,6 +1,16 @@
 $(document).ready(function(){
 	$("#search-text").keydown(search);
 
+	$(document).keyup(function(e) {
+  		if (e.keyCode == 27) { 
+
+  			$(".modal-box, .modal-overlay").fadeOut(500, function() {
+					$(".modal-overlay").remove();
+				});
+
+  		}   // escape key maps to keycode `27`
+	});
+
 	// Codigo para el dialogo modal
 
 	$(function(){
