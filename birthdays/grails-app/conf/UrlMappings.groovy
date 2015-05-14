@@ -2,6 +2,8 @@ class UrlMappings {
 
 	static mappings = {
 
+        "/"(controller: "employee", action:"listAllWithBirtdayInCurrentMonth")
+
 		"/empleados"(resources: "empleado")
         //"/regalos"(resources: "regalo")
 
@@ -24,7 +26,7 @@ class UrlMappings {
             }
         }
 
-        "/"(view:"/index")
+        //"/"(view:"/index")
         "500"(view:'/error')
 	}
 }

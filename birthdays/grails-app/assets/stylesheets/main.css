@@ -595,6 +595,11 @@ a.skip {
 	left: -9999px;
 }
 
+header {
+	text-align: right;
+	padding-right: 5px;
+}
+
 /*#result-conteiner{
 	background-color: #FFFFCC;
 	border-radius: 6px; 

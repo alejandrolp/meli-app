@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
@@ -23,9 +24,17 @@
 		<g:layoutHead/>
 	</head>
 	<body>
+		<sec:ifLoggedIn>
+			<header>
+				<div>Logged in as: ${sec.username()}</div>
+				<div>
+					<g:link controller="login" action="logout" id="logout" class="logout">LOGOUT</g:link>
+				</div>
+			</header>
+		</sec:ifLoggedIn>
 		<div id="grailsLogo" role="banner">
 				<div class="title-div">
-					<h2>GIFTS</h2>
+					<h2>BIRTHDAYS</h2>
 				</div>
 		</div>
 		<g:layoutBody/>
